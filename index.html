@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zoomexa - Freelancing Institute</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Font Awesome for star ratings -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Swiper Carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-extrabold text-blue-600">Zoomexa</h1>
+      <nav class="hidden md:flex space-x-6 text-base font-medium">
+        <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#about" class="text-gray-700 hover:text-blue-600">About Us</a>
+        <a href="#courses" class="text-gray-700 hover:text-blue-600">Courses</a>
+        <a href="#feedbacks" class="text-gray-700 hover:text-blue-600">Student Feedbacks</a>
+        <a href="#notice" class="text-gray-700 hover:text-blue-600">Notice Board</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="menu" class="md:hidden hidden px-6 pb-4 bg-white border-t border-gray-200">
+      <a href="#" class="block py-2 text-gray-700">Home</a>
+      <a href="#about" class="block py-2 text-gray-700">About Us</a>
+      <a href="#courses" class="block py-2 text-gray-700">Courses</a>
+      <a href="#feedbacks" class="block py-2 text-gray-700">Student Feedbacks</a>
+      <a href="#notice" class="block py-2 text-gray-700">Notice Board</a>
+    </div>
+  </header>
+
+  <div class="h-20"></div>
+
+  <!-- Hero -->
+  <section class="relative bg-gradient-to-r from-blue-800 to-indigo-700 text-white py-24 text-center">
+    <div class="container mx-auto px-6 z-10 relative">
+      <h1 class="text-5xl font-extrabold mb-6">Welcome to Zoomexa</h1>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Master the art of freelancing with real-world projects, live support, and a career-building roadmap.</p>
+      <div class="flex flex-col md:flex-row justify-center gap-4">
+        <a href="#courses" class="bg-white text-blue-700 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">Explore Courses</a>
+        <a href="#feedbacks" class="border border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-blue-700 transition">See Feedback</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+ <section id="about" class="py-16 bg-white text-center">
+  <h1 class="text-5xl font-extrabold mb-6">Zoomexa সম্পর্কে</h1>
+	<p class="text-xl mb-8 max-w-2xl mx-auto">Zoomexa হল এমন একটি প্রতিষ্ঠান, যেখানে ফ্রীল্যান্সিং শেখার সুযোগ পাওয়া যায় এবং এর মাধ্যমে সমাজের মানুষকে আরও শক্তিশালী করা হয়। এখানে ছাত্র-ছাত্রীরা ফ্রীল্যান্সিং এর জগতে প্রবেশ করে এবং তাদের দক্ষতা ও কার্যক্ষমতা বাড়ে। Zoomexa শিক্ষকেরা ছাত্র-ছাত্রীদেরকে ফ্রীল্যান্সিং এর প্রাথমিক ধারণা দেন এবং বিভিন্ন ফ্রীল্যান্সিং প্ল্যাটফর্মে কাজ করার জন্য প্রস্তুত করেন।</p>
+</section>
+
+  <!-- Courses -->
+  <section id="courses" class="py-16">
+  
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Our Courses</h2>
+		<div class="container mx-auto px-6">
+ 
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Course Card Example -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-4">Freelance 101</h3>
+        <p class="text-gray-600 mb-4">Learn the fundamentals of freelancing, from finding clients to managing projects.</p>
+        <a href="#" class="text-indigo-600 font-semibold hover:underline">Learn More</a>
+      </div>
+      <!-- Add more courses as needed -->
+    </div>
+  </div>
+  <br>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Digital Marketing Course -->
+            <div class="course p-6 bg-white shadow-lg rounded-lg">
+                <h3 class="text-2xl font-semibold mb-4">Digital Marketing</h3>
+                <p class="text-lg text-gray-600">Learn how to grow your brand online.</p>
+                <p class="text-xl font-bold text-green-500 mt-4">Price: ৳12,500</p>
+                <button class="mt-6 px-6 py-2 bg-blue-600 text-white rounded-full">Enroll Now</button>
+            </div>
+            <!-- Graphics Design Course -->
+            <div class="course p-6 bg-white shadow-lg rounded-lg">
+                <h3 class="text-2xl font-semibold mb-4">Graphics Design</h3>
+                <p class="text-lg text-gray-600">Create stunning visuals and designs.</p>
+                <p class="text-xl font-bold text-green-500 mt-4">Price: ৳7,600</p>
+                <button class="mt-6 px-6 py-2 bg-blue-600 text-white rounded-full">Enroll Now</button>
+            </div>
+            <!-- Web Development Course -->
+            <div class="course p-6 bg-white shadow-lg rounded-lg">
+                <h3 class="text-2xl font-semibold mb-4">Web Development</h3>
+                <p class="text-lg text-gray-600">Learn how to build modern websites.</p>
+                <p class="text-xl font-bold text-green-500 mt-4">Price: ৳13,000</p>
+                <button class="mt-6 px-6 py-2 bg-blue-600 text-white rounded-full">Enroll Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Student Feedback -->
+  <section id="feedbacks" class="py-16 bg-gray-50 text-center">
+    <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-6 text-gray-800">Student Feedbacks</h2>
+    <p class="text-lg text-gray-600 mb-10">Hear from our successful students.</p>
+
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper max-w-3xl mx-auto">
+        <div class="swiper-wrapper">
+          <!-- Feedback 1 -->
+          <div class="swiper-slide bg-white p-6 rounded shadow">
+            <p class="text-lg text-gray-700 italic mb-4">"Zoomexa-র কোর্সটি আমার ফ্রিল্যান্সিং যাত্রা সম্পূর্ণ পরিবর্তন করে দিয়েছে। আমি মাত্র ৩ সপ্তাহে আমার প্রথম ক্লায়েন্ট পেয়েছি!"</p>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold text-blue-600">নাহিদ হাসান</span>
+              <div class="text-yellow-400 text-lg">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Feedback 2 -->
+          <div class="swiper-slide bg-white p-6 rounded shadow">
+            <p class="text-lg text-gray-700 italic mb-4">"অসাধারণ কনটেন্ট এবং দুর্দান্ত সাপোর্ট। আমি Zoomexa-কে অত্যন্ত সুপারিশ করছি।"</p>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold text-blue-600">রাইসা আক্তার</span>
+              <div class="text-yellow-400 text-lg">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Feedback 3 -->
+          <div class="swiper-slide bg-white p-6 rounded shadow">
+            <p class="text-lg text-gray-700 italic mb-4">"মডিউলগুলো ভালোভাবে সাজানো হয়েছে। লাইভ সেশনের মাধ্যমে অনেক মূল্যবান তথ্য পেয়েছি।"</p>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold text-blue-600">তানভির রহমান</span>
+              <div class="text-yellow-400 text-lg">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Feedback 4 -->
+          <div class="swiper-slide bg-white p-6 rounded shadow">
+            <p class="text-lg text-gray-700 italic mb-4">"কোর্সটির স্লাইডগুলো খুব সহজে বোঝা যায়। আমি অনেক নতুন কিছু শিখেছি।"</p>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold text-blue-600">মিমি দে</span>
+              <div class="text-yellow-400 text-lg">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Feedback 5 -->
+          <div class="swiper-slide bg-white p-6 rounded shadow">
+            <p class="text-lg text-gray-700 italic mb-4">"বেসিক থেকে অ্যাডভান্সড পর্যন্ত পুরো কোর্সটি ভালোভাবে সাজানো হয়েছে। এখন আমি একজন প্রফেশনাল ডিজাইনার!"</p>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold text-blue-600">ইমরান হোসেন</span>
+              <div class="text-yellow-400 text-lg">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Additional Feedbacks -->
+          <!-- Feedback 6 -->
+          <div class="swiper-slide bg-white p-6 rounded shadow">
+            <p class="text-lg text-gray-700 italic mb-4">"আমি বিভিন্ন কোর্স করেছি কিন্তু Zoomexa এর মতো কোর্স কোথাও পাইনি।"</p>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold text-blue-600">সুজন হোসেন</span>
+              <div class="text-yellow-400 text-lg">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Feedback 7 -->
+          <div class="swiper-slide bg-white p-6 rounded shadow">
+            <p class="text-lg text-gray-700 italic mb-4">"আমার প্রথম ক্লায়েন্ট পেয়েছি! Zoomexa এর সহায়তায়।"</p>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold text-blue-600">অরিত্র দে</span>
+              <div class="text-yellow-400 text-lg">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Feedback 8 -->
+          <div class="swiper-slide bg-white p-6 rounded shadow">
+            <p class="text-lg text-gray-700 italic mb-4">"কোর্সটি অনেক বিস্তারিত। আমি যা শিখেছি তা কাজে লাগিয়েছি।"</p>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold text-blue-600">মিথিলা সরকার</span>
+              <div class="text-yellow-400 text-lg">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Feedback 9 -->
+          <div class="swiper-slide bg-white p-6 rounded shadow">
+            <p class="text-lg text-gray-700 italic mb-4">"ফ্রিল্যান্সিং এর প্রতিটি দিক আমি Zoomexa তে শিখেছি।"</p>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold text-blue-600">জাহিদুল ইসলাম</span>
+              <div class="text-yellow-400 text-lg">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Feedback 10 -->
+          <div class="swiper-slide bg-white p-6 rounded shadow">
+            <p class="text-lg text-gray-700 italic mb-4">"আমার কোর্সের অভিজ্ঞতা দারুণ ছিল। Zoomexa সবসময় সহায়ক।"</p>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold text-blue-600">শারমিন আক্তার</span>
+              <div class="text-yellow-400 text-lg">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Feedback 11 -->
+          <div class="swiper-slide bg-white p-6 rounded shadow">
+            <p class="text-lg text-gray-700 italic mb-4">"ফ্রিল্যান্সিং শুরু করার আগে আমি অনেক দ্বিধায় ছিলাম, তবে Zoomexa-র কোর্সটি আমাকে আত্মবিশ্বাসী করেছে।"</p>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold text-blue-600">রিমন হোসেন</span>
+              <div class="text-yellow-400 text-lg">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Feedback 12 -->
+          <div class="swiper-slide bg-white p-6 rounded shadow">
+            <p class="text-lg text-gray-700 italic mb-4">"Zoomexa কোর্সের টিউটোরিয়াল গুলি খুবই কার্যকরী এবং সহায়ক।"</p>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold text-blue-600">শেখ রুহুল</span>
+              <div class="text-yellow-400 text-lg">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Feedback 13 -->
+          <div class="swiper-slide bg-white p-6 rounded shadow">
+            <p class="text-lg text-gray-700 italic mb-4">"Zoomexa’র মাধ্যমে আমি ফ্রিল্যান্সিং করেই সফল হতে পেরেছি।"</p>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold text-blue-600">নাজমা সুলতানা</span>
+              <div class="text-yellow-400 text-lg">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Feedback 14 -->
+          <div class="swiper-slide bg-white p-6 rounded shadow">
+            <p class="text-lg text-gray-700 italic mb-4">"আমি জানতাম না যে আমি এমন ভালোভাবে সফল হতে পারব, Zoomexa কোর্সটি অনেক সহায়ক।"</p>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold text-blue-600">মাশরুফা হোসেন</span>
+              <div class="text-yellow-400 text-lg">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Feedback 15 -->
+          <div class="swiper-slide bg-white p-6 rounded shadow">
+            <p class="text-lg text-gray-700 italic mb-4">"ফ্রিল্যান্সিং এর কৌশলগুলো যেভাবে শেখানো হয়েছে তা অসাধারণ।"</p>
+            <div class="flex justify-between items-center">
+              <span class="font-semibold text-blue-600">শামীমুল ইসলাম</span>
+              <div class="text-yellow-400 text-lg">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+			   </div>
+</div>
+			  
+           <!-- Feedback 16 -->
+<div class="swiper-slide bg-white p-6 rounded shadow">
+  <p class="text-lg text-gray-700 italic mb-4">"Zoomexa’র কোর্সগুলো আমার ফ্রিল্যান্সিং ক্যারিয়ারকে নতুন উচ্চতায় নিয়ে গিয়েছে। আমি এখন ভালো আয় করছি।"</p>
+  <div class="flex justify-between items-center">
+    <span class="font-semibold text-blue-600">মাহফুজুর রহমান</span>
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Feedback 17 -->
+<div class="swiper-slide bg-white p-6 rounded shadow">
+  <p class="text-lg text-gray-700 italic mb-4">"Zoomexa কোর্সের মাধ্যমে আমি এক্সপার্ট হয়ে গিয়েছি। আমি এখন ফ্রিল্যান্সিং থেকে পূর্ণ সময়ের আয় করছি।"</p>
+  <div class="flex justify-between items-center">
+    <span class="font-semibold text-blue-600">রবিউল ইসলাম</span>
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Feedback 18 -->
+<div class="swiper-slide bg-white p-6 rounded shadow">
+  <p class="text-lg text-gray-700 italic mb-4">"ফ্রিল্যান্সিং জগতের সব কিছু বুঝতে এই কোর্স অনেক সাহায্য করেছে। এখন আমি অনেক আত্মবিশ্বাসী।"</p>
+  <div class="flex justify-between items-center">
+    <span class="font-semibold text-blue-600">ফারহান আহমেদ</span>
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Feedback 19 -->
+<div class="swiper-slide bg-white p-6 rounded shadow">
+  <p class="text-lg text-gray-700 italic mb-4">"Zoomexa’র কোর্সের প্রতিটি সেশন আমাকে নতুন কিছু শিখিয়েছে। আমি এখন ফ্রিল্যান্সিং থেকে নিয়মিত আয় করছি।"</p>
+  <div class="flex justify-between items-center">
+    <span class="font-semibold text-blue-600">নাসিমা সুলতানা</span>
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Feedback 20 -->
+<div class="swiper-slide bg-white p-6 rounded shadow">
+  <p class="text-lg text-gray-700 italic mb-4">"এই কোর্সের কারণে আমি আমার ফ্রিল্যান্সিং ক্যারিয়ার শুরু করতে পেরেছি এবং সফল হতে পেরেছি।"</p>
+  <div class="flex justify-between items-center">
+    <span class="font-semibold text-blue-600">হাসান মাহমুদ</span>
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Feedback 21 -->
+<div class="swiper-slide bg-white p-6 rounded shadow">
+  <p class="text-lg text-gray-700 italic mb-4">"Zoomexa’র কোর্সে আমি যা শিখেছি তা ব্যবহার করে আমি অনেক নতুন ক্লায়েন্ট পেয়েছি।"</p>
+  <div class="flex justify-between items-center">
+    <span class="font-semibold text-blue-600">মাহিদ হাসান</span>
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Feedback 22 -->
+<div class="swiper-slide bg-white p-6 rounded shadow">
+  <p class="text-lg text-gray-700 italic mb-4">"ফ্রিল্যান্সিং করতে প্রথমে একটু দ্বিধা ছিলো, কিন্তু Zoomexa এর কোর্সগুলি আমাকে আত্মবিশ্বাসী করেছে।"</p>
+  <div class="flex justify-between items-center">
+    <span class="font-semibold text-blue-600">রিফাতুল ইসলাম</span>
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Feedback 23 -->
+<div class="swiper-slide bg-white p-6 rounded shadow">
+  <p class="text-lg text-gray-700 italic mb-4">"Zoomexa কোর্সগুলোর মাধ্যমে আমি ক্লায়েন্টদের সাথে আরও ভালোভাবে যোগাযোগ করতে শিখেছি।"</p>
+  <div class="flex justify-between items-center">
+    <span class="font-semibold text-blue-600">সুজানা আক্তার</span>
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Feedback 24 -->
+<div class="swiper-slide bg-white p-6 rounded shadow">
+  <p class="text-lg text-gray-700 italic mb-4">"Zoomexa কোর্সটি আমাকে ফ্রিল্যান্সিংয়ের প্রতি গভীর আগ্রহ সৃষ্টি করেছে এবং এখন আমি সফল।"</p>
+  <div class="flex justify-between items-center">
+    <span class="font-semibold text-blue-600">সাদিকুল ইসলাম</span>
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Feedback 25 -->
+<div class="swiper-slide bg-white p-6 rounded shadow">
+  <p class="text-lg text-gray-700 italic mb-4">"Zoomexa কোর্স থেকে শিখে আমি নিজের ব্র্যান্ড তৈরি করেছি এবং বর্তমানে সফল ফ্রিল্যান্সার।"</p>
+  <div class="flex justify-between items-center">
+    <span class="font-semibold text-blue-600">রূপালী মিত্র</span>
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+  </div>
+</div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+  <!-- Footer -->
+<footer class="bg-gray-900 text-white pt-10 pb-6">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+    
+    <!-- Brand -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Zoomexa</h2>
+      <p class="text-gray-400">আপনার ফ্রিল্যান্সিং যাত্রা শুরু হোক Zoomexa-এর সঙ্গে।</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">দ্রুত লিংক</h3>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="#home" class="hover:text-white">হোম</a></li>
+        <li><a href="#about" class="hover:text-white">আমাদের সম্পর্কে</a></li>
+        <li><a href="#courses" class="hover:text-white">কোর্সসমূহ</a></li>
+        <li><a href="#feedback" class="hover:text-white">স্টুডেন্ট ফিডব্যাক</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">যোগাযোগ</h3>
+      <ul class="text-gray-400 space-y-2">
+        <li>ইমেইল: support@zoomexa.com</li>
+        <li>ফোন: +880 1234-567890</li>
+        <li>ঠিকানা: ঢাকা, বাংলাদেশ</li>
+      </ul>
+    </div>
+
+    <!-- Socials -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">সোশ্যাল মিডিয়া</h3>
+      <div class="flex space-x-4 text-gray-400">
+        <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#" class="hover:text-white"><i class="fab fa-youtube"></i> YouTube</a>
+        <a href="#" class="hover:text-white"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center text-gray-500 text-sm mt-10">
+    &copy; 2025 Zoomexa. সর্বস্বত্ব সংরক্ষিত।
+  </div>
+</footer>
+
+</body>
+</html>
