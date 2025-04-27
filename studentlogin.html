@@ -32,21 +32,21 @@
     const loginForm = document.getElementById('loginForm');
     const errorMessage = document.getElementById('errorMessage');
 
-    // তোমার দেওয়া সঠিক ব্যাচ নম্বর ও পাসওয়ার্ড এখানে বসাও
-    const correctBatchNumber = "198";  // <-- তোমার ব্যাচ নম্বর
-    const correctPassword = "zoomexa2025";  // <-- তোমার পাসওয়ার্ড
+    // Correct batch number and password
+    const correctBatchNumber = "198";  // <-- Replace with your batch number
+    const correctPassword = "zoomexa2025";  // <-- Replace with your password
 
     loginForm.addEventListener('submit', function(event) {
-      event.preventDefault(); // ফর্মের ডিফল্ট সাবমিট বন্ধ করি
+      event.preventDefault(); // Prevent default form submission
 
       const batchNumber = document.getElementById('batchNumber').value;
       const password = document.getElementById('password').value;
 
       if (batchNumber === correctBatchNumber && password === correctPassword) {
-        // ব্যাচ নম্বর আর পাসওয়ার্ড মিলেছে, তাহলে রিডাইরেক্ট করবো Student Dashboard এ
-        window.location.href = "studentdash.html"; // তোমার Student Dashboard এর ফাইলের নাম
+        // Correct batch number and password, redirect to the Student Dashboard
+        window.location.href = "https://zoomexa.github.io/zoomexa/studentdash.html"; // Full URL
       } else {
-        // ভুল ব্যাচ নম্বর বা পাসওয়ার্ড
+        // Incorrect batch number or password
         errorMessage.classList.remove('hidden');
       }
     });
