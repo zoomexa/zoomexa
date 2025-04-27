@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard - Zoomexa</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-indigo-600">Zoomexa</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="text-gray-700 hover:text-indigo-600">Home</a>
+        <button class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Dashboard Content -->
+  <main class="max-w-7xl mx-auto py-10 px-6">
+    <h2 class="text-3xl font-bold mb-6 text-gray-800">Student Dashboard, স্বাগতম</h2>
+
+    <!-- Cards Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+      
+      <!-- My Courses -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">আমার কোর্স</h3>
+        <p class="text-gray-600 text-sm">আপনি কোর্সে এনরোল করেছেন।</p>
+       
+      </div>
+
+      <!-- Live Class -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">লাইভ ক্লাস</h3>
+        <p class="text-gray-600 text-sm">আজকের লাইভ ক্লাসে যুক্ত হতে নিচের বাটনে ক্লিক করুন।</p>
+        <button onclick="window.location.href='https://zoom.us/j/your-class-link'" class="mt-4 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 text-sm">
+          Join Zoom Class
+        </button>
+      </div>
+
+      <!-- Notice -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">নোটিস</h3>
+        <p class="text-gray-600 text-sm">নতুন ফ্রিল্যান্সিং লাইভ সেমিনার: ২৮ মে, ২০২৫</p>
+      </div>
+
+    </div>
+
+    <!-- My Courses Section -->
+    <section class="bg-white rounded-xl shadow p-6">
+      <h3 class="text-2xl font-semibold text-indigo-600 mb-6">আমার কোর্সসমূহ</h3>
+
+      <div class="space-y-4">
+        <div class="flex items-center justify-between bg-gray-100 p-4 rounded-lg">
+          <div>
+            <h4 class="text-lg font-semibold text-gray-800">Digital Marketing</h4>
+            <p class="text-sm text-gray-500">Progress: 80%</p>
+          </div>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-sm">Continue</button>
+        </div>
+
+        <div class="flex items-center justify-between bg-gray-100 p-4 rounded-lg">
+          <div>
+            <h4 class="text-lg font-semibold text-gray-800">Graphics Design</h4>
+            <p class="text-sm text-gray-500">Progress: 50%</p>
+          </div>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-sm">Continue</button>
+        </div>
+
+        <div class="flex items-center justify-between bg-gray-100 p-4 rounded-lg">
+          <div>
+            <h4 class="text-lg font-semibold text-gray-800">Web Development</h4>
+            <p class="text-sm text-gray-500">Progress: 30%</p>
+          </div>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-sm">Continue</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-6">
+    © ২০২৫ Zoomexa. All rights reserved.
+  </footer>
+
+</body>
+</html>
