@@ -17,11 +17,12 @@
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-extrabold text-blue-600">Zoomexa</h1>
       <nav class="hidden md:flex space-x-6 text-base font-medium">
-        <a href="https://zoomexa.github.io/zoomexa/" class="text-gray-700 hover:text-blue-600">Home</a>
-        <a href="About.zoomexa.html" class="text-gray-700 hover:text-blue-600">About Us</a>
-        <a href="Courses.html" class="text-gray-700 hover:text-blue-600">Courses</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#about" class="text-gray-700 hover:text-blue-600">About Us</a>
+        <a href="#courses" class="text-gray-700 hover:text-blue-600">Courses</a>
         <a href="#feedbacks" class="text-gray-700 hover:text-blue-600">Student Feedbacks</a>
-        <a href="notice.html" class="text-gray-700 hover:text-blue-600">Notice Board</a>
+        <a href="#notice" class="text-gray-700 hover:text-blue-600">Notice Board</a>
+		 <a href="https://zoomexa.github.io/zoomexa/studentlogin.html" class="text-gray-700 hover:text-indigo-600">Student Dashboard</a>
       </nav>
       <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
         <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -30,13 +31,38 @@
       </button>
     </div>
     <div id="menu" class="md:hidden hidden px-6 pb-4 bg-white border-t border-gray-200">
-      <a href="https://zoomexa.github.io/zoomexa/" class="block py-2 text-gray-700">Home</a>
-      <a href="About.zoomexa.html" class="block py-2 text-gray-700">About Us</a>
-      <a href="Courses.html" class="block py-2 text-gray-700">Courses</a>
+      <a href="#" class="block py-2 text-gray-700">Home</a>
+      <a href="#about" class="block py-2 text-gray-700">About Us</a>
+      <a href="#courses" class="block py-2 text-gray-700">Courses</a>
       <a href="#feedbacks" class="block py-2 text-gray-700">Student Feedbacks</a>
-      <a href="notice.html" class="block py-2 text-gray-700">Notice Board</a>
+      <a href="#notice" class="block py-2 text-gray-700">Notice Board</a>
+	  <a href="#studentdashboard" class="block py-2 text-gray-700">Student Dashboard</a>
+    </div>
+	
+	<!-- Mobile Sidebar Toggle Button -->
+      <button id="sidebarToggle" class="md:hidden text-gray-700 hover:text-indigo-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
   </header>
+
+ <!-- Sidebar (Mobile View) -->
+  <div id="sidebar" class="fixed inset-0 bg-gray-800 bg-opacity-50 z-40 hidden">
+    <div class="bg-white w-64 h-full p-4">
+      <button id="closeSidebar" class="text-gray-700 hover:text-indigo-600 mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+      <nav>
+        <a href="index.html" class="block py-2 px-4 text-gray-700 hover:text-indigo-600">Home</a>
+        <a href="student-dashboard.html" class="block py-2 px-4 text-gray-700 hover:text-indigo-600">Student Dashboard</a>
+        <button class="block py-2 px-4 bg-red-500 text-white hover:bg-red-600 rounded-md">Logout</button>
+      </nav>
+    </div>
+  </div>
 
   <div class="h-20"></div>
 
@@ -46,7 +72,7 @@
       <h1 class="text-5xl font-extrabold mb-6">Welcome to Zoomexa</h1>
       <p class="text-xl mb-8 max-w-2xl mx-auto">Master the art of freelancing with real-world projects, live support, and a career-building roadmap.</p>
       <div class="flex flex-col md:flex-row justify-center gap-4">
-        <a href="https://zoomexa.github.io/zoomexa/Courses.html" class="bg-white text-blue-700 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">Explore Courses</a>
+        <a href="#courses" class="bg-white text-blue-700 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">Explore Courses</a>
         <a href="#feedbacks" class="border border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-blue-700 transition">See Feedback</a>
       </div>
     </div>
@@ -56,14 +82,17 @@
  <section id="about" class="py-16 bg-white text-center">
   <h1 class="text-5xl font-extrabold mb-6">Zoomexa সম্পর্কে</h1>
 	<p class="text-xl mb-8 max-w-2xl mx-auto">Zoomexa হল এমন একটি প্রতিষ্ঠান, যেখানে ফ্রীল্যান্সিং শেখার সুযোগ পাওয়া যায় এবং এর মাধ্যমে সমাজের মানুষকে আরও শক্তিশালী করা হয়। এখানে ছাত্র-ছাত্রীরা ফ্রীল্যান্সিং এর জগতে প্রবেশ করে এবং তাদের দক্ষতা ও কার্যক্ষমতা বাড়ে। Zoomexa শিক্ষকেরা ছাত্র-ছাত্রীদেরকে ফ্রীল্যান্সিং এর প্রাথমিক ধারণা দেন এবং বিভিন্ন ফ্রীল্যান্সিং প্ল্যাটফর্মে কাজ করার জন্য প্রস্তুত করেন।</p>
+
 <!-- About Us Button -->
 <div class="mt-8 text-center">
   <a href="https://zoomexa.github.io/zoomexa/About.zoomexa.html" class="inline-block bg-indigo-600 text-white py-3 px-8 rounded-full font-semibold text-lg hover:bg-indigo-700 transition-all duration-300">
     About Us
   </a>
+  
 </div>
- 
- </section>
+
+
+</section>
 
   <!-- Courses -->
   <section id="courses" class="py-16">
@@ -71,6 +100,17 @@
     <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold mb-8">Our Courses</h2>
 		<div class="container mx-auto px-6">
+ 
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Course Card Example -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-4">Freelance 101</h3>
+        <p class="text-gray-600 mb-4">Learn the fundamentals of freelancing, from finding clients to managing projects.</p>
+        <a href="#" class="text-indigo-600 font-semibold hover:underline">Learn More</a>
+      </div>
+      <!-- Add more courses as needed -->
+    </div>
+  </div>
   <br>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <!-- Digital Marketing Course -->
@@ -96,11 +136,12 @@
             </div>
         </div>
     </div>
-	    <div class="text-center mt-6">
-  <a href="https://zoomexa.github.io/zoomexa/Courses.html" class="inline-block bg-indigo-600 text-white font-bold px-6 py-3 rounded-full shadow hover:bg-indigo-700 transition duration-300">
+<div class="text-center mt-6">
+  <a href="courses.html" class="inline-block bg-indigo-600 text-white font-bold px-6 py-3 rounded-full shadow hover:bg-indigo-700 transition duration-300">
     See More Courses
   </a>
 </div>
+
 </section>
 
 
@@ -448,19 +489,6 @@
     &copy; 2025 Zoomexa. সর্বস্বত্ব সংরক্ষিত।
   </div>
 </footer>
-	<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/680e5486a90978190c0fea97/1iprvkbsm';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
 
 </body>
 </html>
