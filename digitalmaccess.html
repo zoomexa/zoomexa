@@ -18,6 +18,8 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: center;
+      width: 100%;
+      max-width: 400px;
     }
     input[type="text"] {
       padding: 10px;
@@ -35,6 +37,7 @@
       border-radius: 5px;
       font-size: 16px;
       cursor: pointer;
+      width: 100%;
     }
     .error {
       color: red;
@@ -55,14 +58,14 @@
   const correctCode = "digi2025"; // ✅ Set your correct login code here
 
   function login() {
-    const userCode = document.getElementById('codeInput').value;
+    const userCode = document.getElementById('codeInput').value.trim();
     const errorDiv = document.getElementById('error');
 
     if (userCode === correctCode) {
-      // Login success
-      window.location.href = "dashboard.html"; // 🔥 redirect to your page
+      // ✅ Redirect to Zoomexa view page
+      window.location.href = "https://zoomexa.github.io/zoomexa/view.html";
     } else {
-      // Show error
+      // ❌ Show error message
       errorDiv.innerText = "Incorrect code. Please try again.";
     }
   }
