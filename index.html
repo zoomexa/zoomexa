@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,60 +16,42 @@
 
   <!-- Navbar -->
 
-  <header class="bg-white shadow-md fixed top-0 w-full z-50">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-extrabold text-blue-600">Zoomexa</h1>
-      <nav class="hidden md:flex space-x-6 text-base font-medium">
-        <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
-        <a href="#about" class="text-gray-700 hover:text-blue-600">About Us</a>
-        <a href="https://zoomexa.github.io/zoomexa/Courses.html" class="text-gray-700 hover:text-blue-600">Courses</a>
-        <a href="#feedbacks" class="text-gray-700 hover:text-blue-600">Student Feedbacks</a>
-        <a href="https://zoomexa.github.io/zoomexa/notice.html" class="text-gray-700 hover:text-blue-600">Notice Board</a>
-		 <a href="https://zoomexa.github.io/zoomexa/studentlogin.html" class="text-gray-700 hover:text-indigo-600">Student Dashboard</a>
-      </nav>
-      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
-        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
-    </div>
-    <div id="menu" class="md:hidden hidden px-6 pb-4 bg-white border-t border-gray-200">
-      <a href="#" class="block py-2 text-gray-700">Home</a>
-      <a href="#about" class="block py-2 text-gray-700">About Us</a>
-      <a href="#courses" class="block py-2 text-gray-700">Courses</a>
-      <a href="#feedbacks" class="block py-2 text-gray-700">Student Feedbacks</a>
-      <a href="#notice" class="block py-2 text-gray-700">Notice Board</a>
-	  <a href="#studentdashboard" class="block py-2 text-gray-700">Student Dashboard</a>
-    </div>
+ <header class="bg-white shadow-md fixed top-0 w-full z-50">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-extrabold text-blue-600">Zoomexa</h1>
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-6 text-base font-medium">
+      <a href="https://zoomexa.github.io/zoomexa/index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="https://zoomexa.github.io/zoomexa/about.html" class="text-gray-700 hover:text-blue-600">About Us</a>
+      <a href="https://zoomexa.github.io/zoomexa/Courses.html" class="text-gray-700 hover:text-blue-600">Courses</a>
+      <a href="#feedbacks" class="text-gray-700 hover:text-blue-600">Student Feedbacks</a>
+      <a href="https://zoomexa.github.io/zoomexa/notice.html" class="text-gray-700 hover:text-blue-600">Notice Board</a>
+      <a href="https://zoomexa.github.io/zoomexa/studentlogin.html" class="text-gray-700 hover:text-indigo-600">Student Dashboard</a>
+    </nav>
 
-```
-<!-- Mobile Sidebar Toggle Button -->
-<button id="sidebarToggle" class="md:hidden text-gray-700 hover:text-indigo-600">
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-  </svg>
-</button>
-
-```
 
   </header>
 
  <!-- Sidebar (Mobile View) -->
 
-  <div id="sidebar" class="fixed inset-0 bg-gray-800 bg-opacity-50 z-40 hidden">
-    <div class="bg-white w-64 h-full p-4">
-      <button id="closeSidebar" class="text-gray-700 hover:text-indigo-600 mb-4">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-      </button>
-      <nav>
-        <a href="index.html" class="block py-2 px-4 text-gray-700 hover:text-indigo-600">Home</a>
-        <a href="student-dashboard.html" class="block py-2 px-4 text-gray-700 hover:text-indigo-600">Student Dashboard</a>
-        <button class="block py-2 px-4 bg-red-500 text-white hover:bg-red-600 rounded-md">Logout</button>
-      </nav>
-    </div>
+  <div id="mobileSidebar" class="fixed inset-0 bg-gray-800 bg-opacity-50 z-40 hidden">
+  <div class="bg-white w-64 h-full p-4 shadow-lg">
+    <!-- Close button -->
+    <button id="closeSidebar" class="text-gray-700 hover:text-red-500 mb-4">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    <nav class="flex flex-col space-y-3">
+      <a href="https://zoomexa.github.io/zoomexa/index.html" class="text-gray-700 hover:text-indigo-600">Home</a>
+      <a href="#https://zoomexa.github.io/zoomexa/about.html" class="text-gray-700 hover:text-indigo-600">About Us</a>
+      <a href="https://zoomexa.github.io/zoomexa/Courses.html" class="text-gray-700 hover:text-indigo-600">Courses</a>
+      <a href="#feedbacks" class="text-gray-700 hover:text-indigo-600">Student Feedbacks</a>
+      <a href="https://zoomexa.github.io/zoomexa/notice.html" class="text-gray-700 hover:text-indigo-600">Notice Board</a>
+      <a href="https://zoomexa.github.io/zoomexa/studentlogin.html" class="text-gray-700 hover:text-indigo-600">Student Dashboard</a>
+    </nav>
   </div>
+</div>
 
   <div class="h-20"></div>
 
@@ -106,7 +89,7 @@
 
   <section id="courses" class="py-16">
 
-```
+ 
 <div class="container mx-auto text-center">
     <h2 class="text-4xl font-bold mb-8">Our Courses</h2>
 	<div class="container mx-auto px-6">
@@ -120,7 +103,7 @@
   </div>
   <!-- Add more courses as needed -->
 </div>
-```
+ 
 
   </div>
   <br>
@@ -169,7 +152,7 @@
     <h2 class="text-3xl font-bold mb-6 text-gray-800">Student Feedbacks</h2>
     <p class="text-lg text-gray-600 mb-10">Hear from our successful students.</p>
 
-```
+ 
   <!-- Swiper -->
   <div class="swiper mySwiper max-w-3xl mx-auto">
     <div class="swiper-wrapper">
@@ -323,13 +306,13 @@
             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
 		   </div>
-```
+ 
 
 </div>
 
-```
+ 
        <!-- Feedback 16 -->
-```
+ 
 
 <div class="swiper-slide bg-white p-6 rounded shadow">
   <p class="text-lg text-gray-700 italic mb-4">"Zoomexa’র কোর্সগুলো আমার ফ্রিল্যান্সিং ক্যারিয়ারকে নতুন উচ্চতায় নিয়ে গিয়েছে। আমি এখন ভালো আয় করছি।"</p>
@@ -449,12 +432,12 @@
   </div>
 </div>
 
-```
+ 
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
   </div>
 </div>
-```
+ 
 
   </section>
 
@@ -482,7 +465,7 @@
 <footer class="bg-gray-900 text-white pt-10 pb-6">
   <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
 
-```
+ 
 <!-- Brand -->
 <div>
   <h2 class="text-2xl font-bold mb-4">Zoomexa</h2>
@@ -519,7 +502,7 @@
     <a href="#" class="hover:text-white"><i class="fab fa-linkedin"></i> LinkedIn</a>
   </div>
 </div>
-```
+ 
 
   </div>
 
@@ -528,6 +511,8 @@
   </div>
 </footer>
 	<!--Start of Tawk.to Script-->
+	
+	
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -540,24 +525,22 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+<!-- Mobile Desktop Mode Suggestion Popup -->
+<div id="mobilePopup" class="fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center hidden">
+  <div class="bg-white rounded-lg p-6 shadow-xl text-center max-w-sm w-full">
+    <h2 class="text-xl font-bold mb-4 text-red-600">Desktop Mode Recommended</h2>
+    <p class="text-gray-700 mb-4">For a better experience, please turn on <strong>Desktop Site</strong> mode in your mobile browser.</p>
+    <button onclick="document.getElementById('mobilePopup').style.display='none'" class="mt-2 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+      OK
+    </button>
+  </div>
+</div>
 
 <script>
-  const menuBtn = document.getElementById('menu-btn');
-  const sidebar = document.getElementById('sidebar');
-  const closeSidebar = document.getElementById('closeSidebar');
-
-  menuBtn.addEventListener('click', () => {
-    sidebar.classList.remove('hidden');
-  });
-
-  closeSidebar.addEventListener('click', () => {
-    sidebar.classList.add('hidden');
-  });
-
-  // Optional: click outside to close
-  sidebar.addEventListener('click', (e) => {
-    if (e.target === sidebar) {
-      sidebar.classList.add('hidden');
+  // Show popup if screen width is less than 768px (mobile)
+  window.addEventListener('load', () => {
+    if (window.innerWidth < 768) {
+      document.getElementById('mobilePopup').style.display = 'flex';
     }
   });
 </script>
