@@ -32,21 +32,28 @@
     const loginForm = document.getElementById('loginForm');
     const errorMessage = document.getElementById('errorMessage');
 
-    // Correct batch number and password
-    const correctBatchNumber = "198";  // <-- Replace with your batch number
-    const correctPassword = "zoomexa2025";  // <-- Replace with your password
+    // Define batch login data
+    const batchData = {
+      "198": {
+        password: "zoomexa2025",
+        redirectUrl: "https://zoomexa.github.io/zoomexa/studentdash.html"
+      },
+      "199": {
+        password: "zoomexa2025b",
+        redirectUrl: "https://zoomexa.github.io/zoomexa/studentdash199.html"
+      }
+      // Add more batches here as needed
+    };
 
     loginForm.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent default form submission
+      event.preventDefault();
 
-      const batchNumber = document.getElementById('batchNumber').value;
+      const batchNumber = document.getElementById('batchNumber').value.trim();
       const password = document.getElementById('password').value;
 
-      if (batchNumber === correctBatchNumber && password === correctPassword) {
-        // Correct batch number and password, redirect to the Student Dashboard
-        window.location.href = "https://zoomexa.github.io/zoomexa/studentdash.html"; // Full URL
+      if (batchData[batchNumber] && batchData[batchNumber].password === password) {
+        window.location.href = batchData[batchNumber].redirectUrl;
       } else {
-        // Incorrect batch number or password
         errorMessage.classList.remove('hidden');
       }
     });
